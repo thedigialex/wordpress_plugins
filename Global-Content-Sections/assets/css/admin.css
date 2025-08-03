@@ -1,0 +1,186 @@
+/* assets/css/admin.css */
+.gcs-shortcode-meta-box .gcs-shortcode-wrapper {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.gcs-shortcode-meta-box .gcs-shortcode-input {
+    flex: 1;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+    padding: 6px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.gcs-shortcode-meta-box .gcs-copy-shortcode {
+    flex-shrink: 0;
+    height: auto;
+}
+
+.gcs-notice {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-left: 4px solid;
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+}
+
+.gcs-notice-warning {
+    border-left-color: #ffb900;
+    background: #fff8e5;
+}
+
+.gcs-section-info p {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.gcs-section-info strong {
+    color: #1e1e1e;
+}
+
+/* Column styling for posts list */
+.column-shortcode {
+    width: 200px;
+}
+
+.column-usage_count {
+    width: 100px;
+    text-align: center;
+}
+
+.gcs-usage-count {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.gcs-no-usage {
+    background: #f1f1f1;
+    color: #666;
+}
+
+/* Admin page styling */
+.gcs-admin-page .wp-heading-inline {
+    margin-right: 10px;
+}
+
+.gcs-copy-btn:focus,
+.gcs-copy-shortcode:focus {
+    box-shadow: 0 0 0 2px #0073aa;
+    outline: none;
+}
+
+/* Success/error messages */
+.gcs-message {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.gcs-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.gcs-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+    .gcs-shortcode-wrapper {
+        flex-direction: column;
+    }
+    
+    .gcs-shortcode-input {
+        margin-bottom: 5px;
+    }
+}
+
+/* ========================================= */
+
+/* assets/css/frontend.css */
+.global-content-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.global-content-section * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.global-content-section img {
+    height: auto;
+    display: block;
+}
+
+.global-content-section p:first-child {
+    margin-top: 0;
+}
+
+.global-content-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Error styling for frontend */
+.gcs-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px 16px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.gcs-error strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Ensure content flows naturally */
+.global-content-section .wp-block-group,
+.global-content-section .wp-block-columns {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Hide admin-only content on frontend */
+.global-content-section .admin-only {
+    display: none;
+}
+
+/* Responsive content */
+@media (max-width: 768px) {
+    .global-content-section {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Elementor compatibility */
+.elementor-widget-shortcode .global-content-section {
+    margin: 0;
+}
+
+.elementor-widget-shortcode .global-content-section > *:first-child {
+    margin-top: 0;
+}
+
+.elementor-widget-shortcode .global-content-section > *:last-child {
+    margin-bottom: 0;
+}
